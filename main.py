@@ -25,6 +25,9 @@ def main():
     data_path = f"{data_path}/{tweets_csv}"
     
     trump_tweets = TweetClass(data_path)
+    trump_tweets.clean_data()
+    trump_tweets.visualize_tweet_content()
+
     pass
 
 if __name__ == "__main__":
