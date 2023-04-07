@@ -7,7 +7,7 @@ from TweetClasses.tweetClass import TweetClass
 from collections import Counter
 from stop_words import get_stop_words
 
-class TweetClass():
+class TweetCreatorClass():
     
     def __init__(self, path: str) -> None:
         self.train_data = pd.DataFrame()
@@ -29,13 +29,12 @@ class TweetClass():
         tweet_txt = ""
         return tweet_txt
     
-    def create_tweet_class(self) -> None:
-        pass
-    
     def create_tweet_set(self, num_of_tweets:int = 100) -> None:
         dataframe = pd.DataFrame()
         for idx in range(num_of_tweets):
             dataframe = pd.concat(dataframe, self.create_tweet())
         self.created_data = dataframe
 
+    def create_tweet_class(self) -> None:
+        pass
     

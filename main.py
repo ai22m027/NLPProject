@@ -11,7 +11,6 @@ import string
 import nltk
 
 from sklearn.feature_extraction.text import TfidfVectorizer
-
 from TweetClasses.tweetClass import TweetClass
 
 def main():
