@@ -3,6 +3,11 @@
 # Learn more about .gitignore:
 #     https://www.atlassian.com/git/tutorials/saving-changes/gitignore
 
+# Jupyter
+.ipynb_checkpoints/
+# Model File (too large)
+trump_tweeter.pth
+
 # Node artifact files
 node_modules/
 dist/
